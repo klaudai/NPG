@@ -1,0 +1,25 @@
+std::shared_ptr < int > sptr( new int );
+std::shared_ptr < int > sptr2;
+
+std::cout << "sptr: " << sptr.use_count() << " sptr2: " << sptr2.use_count() << '\n';
+sptr2 = sptr;
+std::cout << "sptr: " << sptr.use_count() << " sptr2: " << sptr2.use_count() << '\n';
+
+{
+    std::shared_ptr < int > sptr3 = sptr2;
+    std::cout << "sptr: " << sptr.use_count() << " sptr2: " << sptr2.use_count() << '\n';
+}
+
+std::cout << "sptr: " << sptr.use_count() << " sptr2: " << sptr2.use_count() << '\n';std::shared_ptr < int > sptr( new int );
+std::shared_ptr < int > sptr2;
+
+std::cout << "sptr: " << sptr.use_count() << " sptr2: " << sptr2.use_count() << '\n';
+sptr2 = sptr;
+std::cout << "sptr: " << sptr.use_count() << " sptr2: " << sptr2.use_count() << '\n';
+
+{
+    std::shared_ptr < int > sptr3 = sptr2;
+    std::cout << "sptr: " << sptr.use_count() << " sptr2: " << sptr2.use_count() << '\n';
+}
+
+std::cout << "sptr: " << sptr.use_count() << " sptr2: " << sptr2.use_count() << '\n';
