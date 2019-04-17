@@ -16,3 +16,7 @@ int main()
          std::cout << wektor[ i ] << ' ';
    
 }
+
+//
+//KLADUIA KROMOŁOWSKA
+//
