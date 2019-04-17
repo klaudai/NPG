@@ -1,0 +1,18 @@
+#include <vector>
+#include <iostream>
+
+int main()
+{
+    std::vector < int > wektor;
+   
+    for( int i = 0; i < 10; ++i )
+         wektor.push_back( i );
+   
+    wektor.erase( wektor.begin() ); // Usuń pierwszy element
+    wektor.erase( wektor.begin() + 2, wektor.begin() + 4 ); // Usuń indeksy 2, 3
+    wektor.erase( wektor.begin() + 4, wektor.end() ); // Usuń od indeksu 4 do końca.
+   
+    for( int i = 0; i < wektor.size(); ++i )
+         std::cout << wektor[ i ] << ' ';
+   
+}
